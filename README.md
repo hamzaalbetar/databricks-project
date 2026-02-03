@@ -33,23 +33,23 @@ Integration between CRM and ERP domains
 
 📌 Silver Tables
 
-Silver.crm_cust_info
+Silver_crm_cust_info
 
-Silver.crm_prd_info
+Silver_crm_prd_info
 
-Silver.crm_sales_details
+Silver_crm_sales_details
 
-Silver.erp_cust_az12
+Silver_erp_cust_az12
 
-Silver.erp_loc_z101
+Silver_erp_loc_a101
 
-Silver.erp_az_prd_a1v2
+Silver_erp_px_cat_g1v2
 
 🥇 Gold Layer – Dimensional Model
 
-Gold.dim_cust
+Gold.dim_customers
 
-Gold.dim_prd
+Gold.dim_products
 
 Gold.fact_sales
 
@@ -101,12 +101,3 @@ Analytics-ready model
 
 Ready foundation for BI & ML
 
-🔮 Future Improvements
-
-Automated data quality framework
-
-Scheduled workflow orchestration
-
-CI/CD integration
-
-Power BI dashboard on Gold layer
