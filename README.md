@@ -1,5 +1,5 @@
 🚀 Databricks Data Lakehouse Project
-👨‍💻 Designed & Implemented by Hamza Albetar
+ Designed & Implemented by Hamza Albetar
 🎯 Project Purpose
 
 This project implements an end-to-end Data Engineering pipeline on Databricks using PySpark and Delta Lake.
