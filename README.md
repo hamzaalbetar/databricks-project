@@ -1,34 +1,36 @@
-#🚀 Databricks Data Lakehouse Project
-Designed & Implemented by Hamza Albetar
-##🎯 Project Purpose
+🚀 Databricks Data Lakehouse Project
+👨‍💻 Designed & Implemented by Hamza Albetar
+🎯 Project Purpose
 
-This project demonstrates a complete Data Engineering pipeline built on Databricks using PySpark and Delta Lake.
-It integrates data from:
+This project implements an end-to-end Data Engineering pipeline on Databricks using PySpark and Delta Lake.
+It integrates data from two enterprise systems:
 
-CRM System
+📁 CRM System
 
-ERP System
+📁 ERP System
 
-and transforms raw CSV files into analytics-ready tables following the Medallion Architecture.
+The goal is to transform raw CSV files into structured, analytics-ready tables following the Medallion Architecture (Bronze → Silver → Gold).
 
-#🧱 Architecture
-##🥉 Bronze Layer – Raw Data
+🧱 Architecture Overview
+🥉 Bronze Layer – Raw Ingestion
 
-Ingest CSV files as Delta tables
+Read original CSV files
 
-No business transformation
+Store as Delta tables
 
-Source of truth preservation
+No transformations
 
-##🥈 Silver Layer – Clean & Integrated
+Preserve source data as single source of truth
 
-Data cleansing
+🥈 Silver Layer – Cleansed & Integrated
+
+Data cleaning & normalization
 
 Schema standardization
 
-Domain integration
+Integration between CRM and ERP domains
 
-Tables:
+📌 Silver Tables
 
 Silver.crm_cust_info
 
@@ -42,7 +44,7 @@ Silver.erp_loc_z101
 
 Silver.erp_az_prd_a1v2
 
-##🥇 Gold Layer – Analytics Model
+🥇 Gold Layer – Dimensional Model
 
 Gold.dim_cust
 
@@ -50,13 +52,13 @@ Gold.dim_prd
 
 Gold.fact_sales
 
-Built using Star Schema for BI workloads.
+Built using Star Schema to support analytics and BI workloads.
 
-#🛠 Technologies
+🛠 Technologies Used
 
 Databricks
 
-PySpark
+Apache Spark – PySpark
 
 Delta Lake
 
@@ -64,24 +66,46 @@ GitHub
 
 SQL Analytics
 
-#⚙ Execution Flow
+⚙ Pipeline Execution
 
-Run Bronze notebooks
+Execution order:
 
-Run Silver notebooks
+Bronze notebooks
 
-Run Gold notebooks
+Silver notebooks
 
-Validate results
+Gold notebooks
 
-Current mode: Manual Job Execution
+Validation stage
 
-#✅ Data Quality Rules
+🟡 Current mode: Manual Databricks Job
 
-No null business keys
+✅ Data Quality Rules
 
-Unique IDs
+No null values in business keys
 
-Positive amounts
+Unique customer & product IDs
 
-Referential integrity
+Positive sales amounts
+
+Referential integrity between fact and dimensions
+
+📦 Project Outcome
+
+Unified enterprise Data Lakehouse
+
+Clean Delta architecture
+
+Analytics-ready model
+
+Ready foundation for BI & ML
+
+🔮 Future Improvements
+
+Automated data quality framework
+
+Scheduled workflow orchestration
+
+CI/CD integration
+
+Power BI dashboard on Gold layer
