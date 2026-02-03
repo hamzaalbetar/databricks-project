@@ -12,6 +12,7 @@ It integrates data from two enterprise systems:
 The goal is to transform raw CSV files into structured, analytics-ready tables following the Medallion Architecture (Bronze → Silver → Gold).
 
 🧱 Architecture Overview
+
 🥉 Bronze Layer – Raw Ingestion
 
 Read original CSV files
